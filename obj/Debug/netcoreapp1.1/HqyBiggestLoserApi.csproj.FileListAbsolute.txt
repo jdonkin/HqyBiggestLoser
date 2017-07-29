@@ -1,0 +1,9 @@
+c:\users\jonathan\documents\visual studio 2017\Projects\HqyBiggestLoserApi\HqyBiggestLoserApi\bin\Debug\netcoreapp1.1\HqyBiggestLoserApi.deps.json
+c:\users\jonathan\documents\visual studio 2017\Projects\HqyBiggestLoserApi\HqyBiggestLoserApi\bin\Debug\netcoreapp1.1\HqyBiggestLoserApi.runtimeconfig.json
+c:\users\jonathan\documents\visual studio 2017\Projects\HqyBiggestLoserApi\HqyBiggestLoserApi\bin\Debug\netcoreapp1.1\HqyBiggestLoserApi.runtimeconfig.dev.json
+c:\users\jonathan\documents\visual studio 2017\Projects\HqyBiggestLoserApi\HqyBiggestLoserApi\bin\Debug\netcoreapp1.1\HqyBiggestLoserApi.dll
+c:\users\jonathan\documents\visual studio 2017\Projects\HqyBiggestLoserApi\HqyBiggestLoserApi\bin\Debug\netcoreapp1.1\HqyBiggestLoserApi.pdb
+c:\users\jonathan\documents\visual studio 2017\Projects\HqyBiggestLoserApi\HqyBiggestLoserApi\obj\Debug\netcoreapp1.1\HqyBiggestLoserApi.csprojResolveAssemblyReference.cache
+c:\users\jonathan\documents\visual studio 2017\Projects\HqyBiggestLoserApi\HqyBiggestLoserApi\obj\Debug\netcoreapp1.1\HqyBiggestLoserApi.AssemblyInfo.cs
+c:\users\jonathan\documents\visual studio 2017\Projects\HqyBiggestLoserApi\HqyBiggestLoserApi\obj\Debug\netcoreapp1.1\HqyBiggestLoserApi.dll
+c:\users\jonathan\documents\visual studio 2017\Projects\HqyBiggestLoserApi\HqyBiggestLoserApi\obj\Debug\netcoreapp1.1\HqyBiggestLoserApi.pdb
