@@ -5,9 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Api\Dtos\" />
-    <Folder Include="Api\IServices\" />
-    <Folder Include="Api\Services\" />
+    <Folder Include="Api\Services\Interfaces\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>

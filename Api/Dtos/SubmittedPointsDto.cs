@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace HqyBiggestLoserApi.Api.Dtos
+﻿namespace HqyBiggestLoserApi.Api.Dtos
 {
     public class SubmittedPointsDto
     {
@@ -16,5 +11,7 @@ namespace HqyBiggestLoserApi.Api.Dtos
         public int ExerciseHours { get; set; }
         public bool PersonalGoal { get; set; }
         public bool SupporterInitials { get; set; }
+        public bool PostPersonalGoal { get; set; }
+        public bool PostOnMotivationThread { get; set; }
     }
 }

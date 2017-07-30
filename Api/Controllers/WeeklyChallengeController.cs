@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using HqyBiggestLoserApi.Api.Dtos;
 
 namespace HqyBiggestLoserApi.Controllers
 {
@@ -13,34 +12,38 @@ namespace HqyBiggestLoserApi.Controllers
     {
         // GET: api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<WeeklyChallengeDto> Get()
         {
-            return new string[] { "value1", "value2" };
+            var challenge = new WeeklyChallengeDto()
+            {
+                Week = 2,
+                ChallengeId = 3,
+                ChallengeName = "Drinking Water"
+            };
+            var challenges = new List<WeeklyChallengeDto>();
+            challenges.Add(challenge);
+            
+            return challenges;
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public WeeklyChallengeDto Get(int id)
         {
-            return "value";
+            return new WeeklyChallengeDto
+            {
+                Week = 2,
+                ChallengeId = 3,
+                ChallengeName = "Drinking Water in bottles"
+            };
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        public IActionResult Post([FromBody]WeeklyChallengeDto challenge)
         {
+            return StatusCode(200);
         }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        
     }
 }

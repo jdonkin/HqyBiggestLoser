@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using HqyBiggestLoserApi.Api.Dtos;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,34 +14,30 @@ namespace HqyBiggestLoserApi.Controllers
     {
         // GET: api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<UserPointsDto> Get()
         {
-            return new string[] { "value1", "value2" };
+            var user = new UserPointsDto
+            {
+                UserName = "Awesome",
+                PointsAmount = 200m,
+                Week = 12
+            };
+            var users = new List<UserPointsDto>();
+            users.Add(user);
+
+            return users;
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public UserPointsDto Get(string userName)
         {
-            return "value";
-        }
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            return new UserPointsDto
+            {
+                UserName = userName,
+                PointsAmount = 120m,
+                Week = 2
+            };
         }
     }
 }
