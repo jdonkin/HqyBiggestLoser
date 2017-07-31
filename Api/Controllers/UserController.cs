@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using HqyBiggestLoserApi.Api.Dtos;
 
 namespace HqyBiggestLoserApi.Controllers
 {
@@ -13,34 +9,39 @@ namespace HqyBiggestLoserApi.Controllers
     {
         // GET: api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<UserDto> Get()
         {
-            return new string[] { "value1", "value2" };
+            var user = new UserDto()
+            {
+                UsersFirstName = "Eric",
+                UsersLastName = "Bana",
+                UsersTeamName = "TeamHulk",
+                InitialWeight = 150m
+            };
+
+            var users = new List<UserDto>();
+            users.Add(user);
+            return users;
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public UserDto Get(int id)
         {
-            return "value";
+            return new UserDto()
+            {
+                UsersFirstName = "Tim",
+                UsersLastName = "Tiny",
+                UsersTeamName = "Scrooge",
+                InitialWeight = 75m
+            };
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        public IActionResult Post([FromBody]UserDto value)
         {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            return StatusCode(200);
         }
     }
 }
